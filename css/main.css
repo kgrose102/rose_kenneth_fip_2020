@@ -47,7 +47,7 @@ a:visited is for visited, and just a applies to both.*/
 
 a:link, a:visited 
 { 
- 	text-decoration:none; 	
+	text-decoration:none; 	
 }
 
 a:hover, a:active 
@@ -90,7 +90,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	padding-top: 10px;
 	display: flex;
 	flex-direction: row;
-  	justify-content: flex-start;
+	justify-content: flex-start;
 }
 
 /*This is a flex item*/
@@ -151,7 +151,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	padding-bottom: 40px;
 	display: flex;
 	flex-direction: row;
-  	justify-content: flex-start;
+	justify-content: flex-start;
 }
 
 #promoImage 
@@ -172,7 +172,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	margin-top: 40px;
 	display: flex;
 	flex-direction: row;
-  	justify-content: space-between;
+	justify-content: space-between;
 	border-bottom: solid 1px #DDD;
 	padding-bottom: 40px;
 }
@@ -209,7 +209,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	margin-bottom: 40px;
 	display: flex;
 	flex-direction: row;
-  	justify-content: flex-start;
+	justify-content: flex-start;
 }
 
 #logoFooter
@@ -304,29 +304,77 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 /*Page 2 - Notice we are using one style sheet for all of the pages*/
 
 #contentCon {
+	width: 950px;
 	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 	display: flex;
 	flex-direction: row;
-  	justify-content: flex-start;
+	justify-content: flex-start;
+	background-color: #e1f5fe;
+	flex-wrap: wrap;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
-/*Get rid of this, here just to give different height to promo*/
-#contentCon p 
+#contentCon h3
 {
-	line-height: 630px;
+	font-size: 20px;
 }
 
 #content1 
 {
 	width: 440px;
+	border-right: solid 1px #CCC;
+	margin-bottom: 30px;
+}
+
+fieldset 
+{
+	border: none;
+	padding: 0px;
+}
+
+input, textarea  {
+	font-size: 11px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 300px;
+	height: 10px;
+	background-color: #efefef;
+	display: block;
+	border: 1px solid #999;
+	color: #333;
+}
+
+#comments
+{
+	width: 360px;
+	height: 200px;
+}
+
+#submit
+{
+	display: block;
+	width: 75px;
+	height: 30px;
+	text-align: center;
+	margin-top: 30px;
+	color: #FFF;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #2073a8;
+	font-size: 14px;
+	border: 1px solid #003471;
 }
 
 #content2 
 {
-	margin-left: auto;
-	width: 440px;
+	width: 469px;
+	margin-bottom: 30px;
+	margin-left: 90px;
 }
 
 /*Page 3*/
@@ -337,7 +385,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	margin-bottom: 10px;
 	display: flex;
 	flex-direction: row;
-  	justify-content: space-between;
+	justify-content: space-between;
 }
 
 

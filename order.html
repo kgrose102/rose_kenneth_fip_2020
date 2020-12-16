@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>Order 3D Print</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
@@ -25,8 +25,44 @@
 		</header><!--end mainHeader-->
 		<section id="contentCon">
 			<h2 class="hidden">Form for Ordering or Inquiries</h2>
-			<div id="content1"><p>Content Area 1</p></div><!--end content1-->
-			<div id="content2"><p>Content Area 2</p></div><!--end content2-->
+			
+				<div id="content1">
+					<h3>Order Form:</h3>
+					<form id="orderForm" action="form.php" method="post">
+					<label for="name">Name: (required)</label>
+					<input type="text" required id="name" name="fullName" size="30" placeholder="Enter Your Name">
+					<label for="email">Email: (will not be published)</label>
+					<input type="email" required id="email" size="30" placeholder="Enter your Email">
+					<div id="printMaterial">
+						<h3>What 3D printing medium for your print? (required)</h3>
+
+						<label for="filament">Filament<input id="filament" type="radio" checked="checked" value="filament" name="type"></label>
+						
+						<label for="resin">UV Resin<input id="resin" type="radio" checked="checked" value="resin" name="type"></label>
+
+						<label for="sugg">Open To Suggestion<input id="sugg" type="radio" checked="checked" value="help" name="type"></label>
+						
+					</div>
+					
+
+					<label for="country">Select Country for Shipping Estimate</label>
+					<input type="text" id="country" required placeholder="Canada" name="country">
+
+					<label for="file">Upload STL File (required)</label>
+					<input type="file" id="file" required name="file">
+					<label for="comments">Comments:</label>
+					<textarea name="comments" id="comments" required cols="50" rows="8"></textarea>
+					<label for="human">What is 5 + 4?</label>
+					<input type="text" required id="human" size="30" placeholder="What is 5 + 4?">
+					<input id="submit" type="submit" value="Submit">
+					</form>
+				</div><!--end content1-->
+				<div id="content2">
+					<h3>Ordering Notes</h3>
+					<p>Please keep the STL files appropriate. We will not process orders with inappropriate files.</p>
+					<img src="images/orderdonot.png" height="180" width="180" alt="3D printed genitalia with a red circle over it">
+				</div><!--end content2-->
+			
 		</section><!--end contentCon-->
 				<footer id="mainFooter">
 			<img id="#logoFooter" src="images/logo.svg" alt="footer logo">
